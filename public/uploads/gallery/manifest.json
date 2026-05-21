@@ -1,0 +1,36 @@
+{
+  "categories": [
+    { "id": "all", "label": "Tous" },
+    { "id": "patisserie", "label": "Pâtisserie & Boulangerie" },
+    { "id": "restauration", "label": "Café & Restauration" },
+    { "id": "evenements", "label": "Événements" },
+    { "id": "portraits", "label": "Portraits & Corporate" },
+    { "id": "mode", "label": "Mode & Artisanat" }
+  ],
+  "items": [
+    { "file": "s01.jpg", "category": "portraits", "title": "Portrait Direction", "client": "Conseil & Stratégie" },
+    { "file": "s02.jpg", "category": "portraits", "title": "Réunion conseil", "client": "Espace de coworking" },
+    { "file": "s03.jpg", "category": "portraits", "title": "Portrait studio", "client": "Identité corporate" },
+    { "file": "s04.jpg", "category": "portraits", "title": "Portrait studio premium", "client": "Branding personnel" },
+    { "file": "s05.jpg", "category": "portraits", "title": "Workshop équipe", "client": "Innovation Lab" },
+    { "file": "s06.jpg", "category": "portraits", "title": "Portrait lifestyle", "client": "Entrepreneur" },
+    { "file": "s07.jpg", "category": "portraits", "title": "Portrait éditorial", "client": "Profile Magazine" },
+    { "file": "s08.jpg", "category": "portraits", "title": "Mentorat business", "client": "Coaching pro" },
+    { "file": "s09.jpg", "category": "evenements", "title": "Garden party", "client": "Lancement produit" },
+    { "file": "s10.jpg", "category": "evenements", "title": "Conférence ouverte", "client": "Talk inspirant" },
+    { "file": "s11.jpg", "category": "restauration", "title": "Buffet traiteur", "client": "Cocktail d'entreprise" },
+    { "file": "s12.jpg", "category": "restauration", "title": "IZY Coffee · Atelier", "client": "IZY Coffee" },
+    { "file": "s13.jpg", "category": "restauration", "title": "IZY Coffee · Espresso", "client": "IZY Coffee" },
+    { "file": "s14.jpg", "category": "restauration", "title": "IZY Coffee · Latte art", "client": "IZY Coffee" },
+    { "file": "s15.jpg", "category": "evenements", "title": "Lecture sur scène", "client": "Spectacle vivant" },
+    { "file": "s16.jpg", "category": "evenements", "title": "Théâtre · Tête-à-tête", "client": "Production scénique" },
+    { "file": "s17.jpg", "category": "patisserie", "title": "Mille-feuille Signature", "client": "Le Café Gourmand" },
+    { "file": "s18.jpg", "category": "patisserie", "title": "Entremets cœur rouge", "client": "Le Café Gourmand" },
+    { "file": "s19.jpg", "category": "patisserie", "title": "Tartelette dorée", "client": "Le Café Gourmand" },
+    { "file": "s20.jpg", "category": "patisserie", "title": "Brownie Americain", "client": "Le Café Gourmand" },
+    { "file": "s21.jpg", "category": "restauration", "title": "Vol-au-vent gastronomique", "client": "Restaurant étoilé" },
+    { "file": "s22.jpg", "category": "patisserie", "title": "Panier campagne", "client": "Boulangerie artisanale" },
+    { "file": "s23.jpg", "category": "mode", "title": "Bijoux Wax", "client": "Atelier de création" },
+    { "file": "s24.jpg", "category": "mode", "title": "Cueillette du café", "client": "Producteur éthique" }
+  ]
+}
