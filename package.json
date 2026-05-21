@@ -1,0 +1,15 @@
+{
+  "name": "nibizi-visuals",
+  "version": "1.0.0",
+  "description": "Site NibiziVisuals - Agence digitale pour artisans & PME",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
