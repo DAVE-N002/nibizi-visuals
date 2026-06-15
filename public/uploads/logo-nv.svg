@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" role="img" aria-label="NibiziVisuals">
+  <title>NibiziVisuals — Media Company</title>
+  <g fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter">
+    <!-- Left N: outer + diagonal -->
+    <polyline points="15,78 15,12 55,78"/>
+    <polyline points="55,78 55,12"/>
+    <!-- Right V interlocked -->
+    <polyline points="45,12 75,78 105,12"/>
+    <!-- Crossbar accent -->
+    <line x1="55" y1="44" x2="75" y2="44" stroke-width="2"/>
+  </g>
+</svg>
