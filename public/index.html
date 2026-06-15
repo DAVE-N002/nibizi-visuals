@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NibiziVisuals — Agence digitale pour artisans &amp; PME | Site web, réseaux sociaux, photo</title>
-  <meta name="description" content="NibiziVisuals crée des sites web, gère vos réseaux sociaux et produit des photos professionnelles pour artisans, artistes et PME en France. Diagnostic gratuit." />
+  <title>NibiziVisuals â€” Agence digitale pour artisans &amp; PME | Site web, rÃ©seaux sociaux, photo</title>
+  <meta name="description" content="NibiziVisuals crÃ©e des sites web, gÃ¨re vos rÃ©seaux sociaux et produit des photos professionnelles pour artisans, artistes et PME en France. Diagnostic gratuit." />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/svg+xml" href="uploads/logo-nv.svg" sizes="any" />
   <link rel="apple-touch-icon" href="favicon.svg" />
   <meta name="theme-color" content="#050508" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
     :root{
       --void:#050508;
@@ -149,7 +149,7 @@
     .section-head .meta{font-size:12px;color:var(--smoke);letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;padding-bottom:8px}
     .section-head .meta .sq{display:inline-block;width:6px;height:6px;background:var(--blue);margin-right:10px;vertical-align:middle}
 
-    /* ============ Réalisations ============ */
+    /* ============ RÃ©alisations ============ */
     .gallery-filters{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 32px;justify-content:center}
     .gallery-filters button{padding:10px 18px;border:1px solid var(--border);background:rgba(20,20,30,.5);color:var(--chrome);font-size:11px;letter-spacing:.18em;text-transform:uppercase;border-radius:999px;cursor:pointer;transition:all .25s ease;font-family:inherit}
     .gallery-filters button:hover{border-color:var(--blue-light);color:var(--white)}
@@ -184,7 +184,7 @@
     .service-card .tag .arr{margin-left:auto;transition:transform .25s}
     .service-card:hover .tag .arr{transform:translateX(6px)}
 
-    /* ============ Présence sans compromis ============ */
+    /* ============ PrÃ©sence sans compromis ============ */
     .pres{background:linear-gradient(180deg,var(--void) 0%, #0A1628 50%, var(--void) 100%);position:relative}
     .pres-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
     .pres h2{font-family:"Bebas Neue";font-size:clamp(64px,10vw,148px);line-height:.86;color:var(--white);letter-spacing:.005em;text-transform:uppercase}
@@ -214,7 +214,7 @@
     .about-text .lead{margin-top:28px;font-size:15px;line-height:1.8;color:var(--chrome);max-width:540px;font-weight:300}
     .about-text ul{list-style:none;margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px}
     .about-text li{font-size:13px;color:var(--chrome);line-height:1.6;display:flex;gap:12px;align-items:baseline}
-    .about-text li::before{content:"—";color:var(--blue-light);font-weight:500;flex-shrink:0}
+    .about-text li::before{content:"â€”";color:var(--blue-light);font-weight:500;flex-shrink:0}
 
     /* ============ CTA Diagnostic ============ */
     .cta-block{padding:32px var(--pad)}
@@ -424,7 +424,7 @@
     /* Grain visibility tied to intensity */
     .hero-grain{opacity:calc(.6 + var(--grain-int) * .4)}
 
-    /* Hide the in-design “nav-cta” direct-edit override when mood swaps so it doesn’t clash */
+    /* Hide the in-design â€œnav-ctaâ€ direct-edit override when mood swaps so it doesnâ€™t clash */
     body[data-mood-override="1"] .nav-cta[style*="background-color"]{background-color:var(--blue) !important}
 
     /* ====== Extended Tweaks ====== */
@@ -514,7 +514,7 @@
     body[data-reveal="none"] .reveal{opacity:1;transform:none;transition:none}
   </style>
 </head>
-<body>
+<body data-title-case="lower" data-density="compact" data-hover-fx="glow">
 
   <!-- SVG symbol library -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -539,11 +539,11 @@
       </a>
       <div class="nav-links">
         <a href="#services"><span class="dot"></span>Services</a>
-        <a href="#realisations"><span class="dot"></span>Réalisations</a>
-        <a href="#about"><span class="dot"></span>À propos</a>
+        <a href="#realisations"><span class="dot"></span>RÃ©alisations</a>
+        <a href="#about"><span class="dot"></span>Ã€ propos</a>
         <a href="#tarifs"><span class="dot"></span>Tarifs</a>
       </div>
-      <a href="#contact" class="btn btn-primary nav-cta" style="background-color: rgb(197, 204, 91)">Diagnostic gratuit <span class="arrow">→</span></a>
+      <a href="#contact" class="btn btn-primary nav-cta" style="background-color: rgb(197, 204, 91)">Diagnostic gratuit <span class="arrow">â†’</span></a>
       <button class="burger" id="burger" aria-label="Menu"><span></span></button>
     </div>
   </nav>
@@ -557,13 +557,13 @@
           <span class="tag">Media Company</span>
         </span>
       </div>
-      <button class="close" id="sheet-close" aria-label="Fermer">×</button>
+      <button class="close" id="sheet-close" aria-label="Fermer">Ã—</button>
     </div>
     <a href="#services" class="m-link">Services</a>
-    <a href="#realisations" class="m-link">Réalisations</a>
-    <a href="#about" class="m-link">À propos</a>
+    <a href="#realisations" class="m-link">RÃ©alisations</a>
+    <a href="#about" class="m-link">Ã€ propos</a>
     <a href="#tarifs" class="m-link">Tarifs</a>
-    <a href="#contact" class="m-link" style="color:var(--blue-light)">Diagnostic gratuit →</a>
+    <a href="#contact" class="m-link" style="color:var(--blue-light)">Diagnostic gratuit â†’</a>
   </div>
 
   <!-- HERO -->
@@ -582,14 +582,14 @@
     </div>
 
     <div class="hero-inner">
-      <div class="hero-eyebrow"><span class="pulse"></span><span class="eyebrow">Agence digitale · Basée en France</span></div>
+      <div class="hero-eyebrow"><span class="pulse"></span><span class="eyebrow">Agence digitale Â· BasÃ©e en France</span></div>
       <h1 class="hero-title">
-        <span class="line1">Votre présence</span>
-        <span class="line2 grad">Magnifiée.</span>
+        <span class="line1">Votre prÃ©sence</span>
+        <span class="line2 grad">MagnifiÃ©e.</span>
       </h1>
-      <p class="hero-sub">Sites web, réseaux sociaux, photo &amp; identité visuelle pour artisans, artistes et petites entreprises qui méritent une présence digitale à la hauteur de leur talent.</p>
+      <p class="hero-sub">Sites web, rÃ©seaux sociaux, photo &amp; identitÃ© visuelle pour artisans, artistes et petites entreprises qui mÃ©ritent une prÃ©sence digitale Ã  la hauteur de leur talent.</p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn btn-primary">Diagnostic gratuit <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-primary">Diagnostic gratuit <span class="arrow">â†’</span></a>
         <a href="#realisations" class="btn btn-ghost">Voir nos projets</a>
       </div>
     </div>
@@ -603,30 +603,30 @@
   <!-- Marquee -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>Sites web <span class="sep">●</span> Réseaux sociaux <span class="sep">●</span> Photo &amp; Vidéo <span class="sep">●</span> Identité visuelle <span class="sep">●</span> Stratégie digitale <span class="sep">●</span> Diagnostic gratuit <span class="sep">●</span></span>
-      <span>Sites web <span class="sep">●</span> Réseaux sociaux <span class="sep">●</span> Photo &amp; Vidéo <span class="sep">●</span> Identité visuelle <span class="sep">●</span> Stratégie digitale <span class="sep">●</span> Diagnostic gratuit <span class="sep">●</span></span>
+      <span>Sites web <span class="sep">â—</span> RÃ©seaux sociaux <span class="sep">â—</span> Photo &amp; VidÃ©o <span class="sep">â—</span> IdentitÃ© visuelle <span class="sep">â—</span> StratÃ©gie digitale <span class="sep">â—</span> Diagnostic gratuit <span class="sep">â—</span></span>
+      <span>Sites web <span class="sep">â—</span> RÃ©seaux sociaux <span class="sep">â—</span> Photo &amp; VidÃ©o <span class="sep">â—</span> IdentitÃ© visuelle <span class="sep">â—</span> StratÃ©gie digitale <span class="sep">â—</span> Diagnostic gratuit <span class="sep">â—</span></span>
     </div>
   </div>
 
   <!-- STATS BAND -->
   <div class="statsband">
     <div class="statsband-inner">
-      <div class="stat-cell reveal"><div class="num">+10</div><div class="lbl">Clients accompagnés</div></div>
+      <div class="stat-cell reveal"><div class="num">+10</div><div class="lbl">Clients accompagnÃ©s</div></div>
       <div class="stat-cell reveal"><div class="num">100%</div><div class="lbl">Satisfaction client</div></div>
-      <div class="stat-cell reveal"><div class="num">3</div><div class="lbl">Expertises cœur</div></div>
-      <div class="stat-cell reveal"><div class="num">FR</div><div class="lbl">Basé en France</div></div>
+      <div class="stat-cell reveal"><div class="num">3</div><div class="lbl">Expertises cÅ“ur</div></div>
+      <div class="stat-cell reveal"><div class="num">FR</div><div class="lbl">BasÃ© en France</div></div>
     </div>
   </div>
 
-  <!-- RÉALISATIONS -->
-  <section class="zone" id="realisations" data-screen-label="02 Réalisations">
+  <!-- RÃ‰ALISATIONS -->
+  <section class="zone" id="realisations" data-screen-label="02 RÃ©alisations">
     <div class="wrap">
       <div class="section-head reveal">
         <div class="left">
-          <span class="eyebrow"><span style="display:inline-block;width:24px;height:1px;background:var(--blue-light);vertical-align:middle;margin-right:12px"></span>Réalisations · 2024–2026</span>
-          <h2>Des projets qui<br/><span class="accent">parlent d'eux-mêmes.</span></h2>
+          <span class="eyebrow"><span style="display:inline-block;width:24px;height:1px;background:var(--blue-light);vertical-align:middle;margin-right:12px"></span>RÃ©alisations Â· 2024â€“2026</span>
+          <h2>Des projets qui<br/><span class="accent">parlent d'eux-mÃªmes.</span></h2>
         </div>
-        <div class="meta"><span class="sq"></span><span id="gallery-meta-count">24</span> projets sélectionnés</div>
+        <div class="meta"><span class="sq"></span><span id="gallery-meta-count">24</span> projets sÃ©lectionnÃ©s</div>
       </div>
     </div>
     <div class="wrap reveal">
@@ -646,37 +646,37 @@
         var GALLERY_DATA = {
           categories: [
             { id: "all", label: "Tous" },
-            { id: "patisserie", label: "Pâtisserie & Boulangerie" },
-            { id: "restauration", label: "Café & Restauration" },
-            { id: "evenements", label: "Événements" },
+            { id: "patisserie", label: "PÃ¢tisserie & Boulangerie" },
+            { id: "restauration", label: "CafÃ© & Restauration" },
+            { id: "evenements", label: "Ã‰vÃ©nements" },
             { id: "portraits", label: "Portraits & Corporate" },
             { id: "mode", label: "Mode & Artisanat" }
           ],
           items: [
-            { file: "s01.jpg", category: "portraits", title: "Portrait Direction", client: "Conseil & Stratégie" },
-            { file: "s02.jpg", category: "portraits", title: "Réunion conseil", client: "Espace de coworking" },
-            { file: "s03.jpg", category: "portraits", title: "Portrait studio", client: "Identité corporate" },
+            { file: "s01.jpg", category: "portraits", title: "Portrait Direction", client: "Conseil & StratÃ©gie" },
+            { file: "s02.jpg", category: "portraits", title: "RÃ©union conseil", client: "Espace de coworking" },
+            { file: "s03.jpg", category: "portraits", title: "Portrait studio", client: "IdentitÃ© corporate" },
             { file: "s04.jpg", category: "portraits", title: "Portrait studio premium", client: "Branding personnel" },
-            { file: "s05.jpg", category: "portraits", title: "Workshop équipe", client: "Innovation Lab" },
+            { file: "s05.jpg", category: "portraits", title: "Workshop Ã©quipe", client: "Innovation Lab" },
             { file: "s06.jpg", category: "portraits", title: "Portrait lifestyle", client: "Entrepreneur" },
-            { file: "s07.jpg", category: "portraits", title: "Portrait éditorial", client: "Profile Magazine" },
+            { file: "s07.jpg", category: "portraits", title: "Portrait Ã©ditorial", client: "Profile Magazine" },
             { file: "s08.jpg", category: "portraits", title: "Mentorat business", client: "Coaching pro" },
             { file: "s09.jpg", category: "evenements", title: "Garden party", client: "Lancement produit" },
-            { file: "s10.jpg", category: "evenements", title: "Conférence ouverte", client: "Talk inspirant" },
+            { file: "s10.jpg", category: "evenements", title: "ConfÃ©rence ouverte", client: "Talk inspirant" },
             { file: "s11.jpg", category: "restauration", title: "Buffet traiteur", client: "Cocktail d'entreprise" },
-            { file: "s12.jpg", category: "restauration", title: "IZY Coffee · Atelier", client: "IZY Coffee" },
-            { file: "s13.jpg", category: "restauration", title: "IZY Coffee · Espresso", client: "IZY Coffee" },
-            { file: "s14.jpg", category: "restauration", title: "IZY Coffee · Latte art", client: "IZY Coffee" },
-            { file: "s15.jpg", category: "evenements", title: "Lecture sur scène", client: "Spectacle vivant" },
-            { file: "s16.jpg", category: "evenements", title: "Théâtre · Tête-à-tête", client: "Production scénique" },
-            { file: "s17.jpg", category: "patisserie", title: "Mille-feuille Signature", client: "Le Café Gourmand" },
-            { file: "s18.jpg", category: "patisserie", title: "Entremets cœur rouge", client: "Le Café Gourmand" },
-            { file: "s19.jpg", category: "patisserie", title: "Tartelette dorée", client: "Le Café Gourmand" },
-            { file: "s20.jpg", category: "patisserie", title: "Brownie Americain", client: "Le Café Gourmand" },
-            { file: "s21.jpg", category: "restauration", title: "Vol-au-vent gastronomique", client: "Restaurant étoilé" },
+            { file: "s12.jpg", category: "restauration", title: "IZY Coffee Â· Atelier", client: "IZY Coffee" },
+            { file: "s13.jpg", category: "restauration", title: "IZY Coffee Â· Espresso", client: "IZY Coffee" },
+            { file: "s14.jpg", category: "restauration", title: "IZY Coffee Â· Latte art", client: "IZY Coffee" },
+            { file: "s15.jpg", category: "evenements", title: "Lecture sur scÃ¨ne", client: "Spectacle vivant" },
+            { file: "s16.jpg", category: "evenements", title: "ThÃ©Ã¢tre Â· TÃªte-Ã -tÃªte", client: "Production scÃ©nique" },
+            { file: "s17.jpg", category: "patisserie", title: "Mille-feuille Signature", client: "Le CafÃ© Gourmand" },
+            { file: "s18.jpg", category: "patisserie", title: "Entremets cÅ“ur rouge", client: "Le CafÃ© Gourmand" },
+            { file: "s19.jpg", category: "patisserie", title: "Tartelette dorÃ©e", client: "Le CafÃ© Gourmand" },
+            { file: "s20.jpg", category: "patisserie", title: "Brownie Americain", client: "Le CafÃ© Gourmand" },
+            { file: "s21.jpg", category: "restauration", title: "Vol-au-vent gastronomique", client: "Restaurant Ã©toilÃ©" },
             { file: "s22.jpg", category: "patisserie", title: "Panier campagne", client: "Boulangerie artisanale" },
-            { file: "s23.jpg", category: "mode", title: "Bijoux Wax", client: "Atelier de création" },
-            { file: "s24.jpg", category: "mode", title: "Cueillette du café", client: "Producteur éthique" }
+            { file: "s23.jpg", category: "mode", title: "Bijoux Wax", client: "Atelier de crÃ©ation" },
+            { file: "s24.jpg", category: "mode", title: "Cueillette du cafÃ©", client: "Producteur Ã©thique" }
           ]
         };
 
@@ -719,9 +719,9 @@
           card.className = 'real-card';
           card.setAttribute('data-category', it.category);
           card.innerHTML = ''+
-            '<img src="uploads/gallery/' + it.file + '" alt="' + escapeHtml(it.title) + '" loading="lazy" />'+
+            '<img src="uploads/gallery/' + it.file + '" alt="' + escapeHtml(it.title) + '" loading="lazy" decoding="async" width="800" height="1000" />'+
             '<div class="overlay"></div>'+
-            '<div class="arrow-circle">↗</div>'+
+            '<div class="arrow-circle">â†—</div>'+
             '<div class="info">'+
               '<span class="cat">' + escapeHtml(categoryLabel(categories, it.category)) + '</span>'+
               '<span class="nm">' + escapeHtml(it.title) + '</span>'+
@@ -739,7 +739,7 @@
             card.style.display = match ? '' : 'none';
             if (match) visible++;
           }
-          if (countEl) countEl.textContent = visible + ' projet' + (visible>1?'s':'') + ' affiché' + (visible>1?'s':'');
+          if (countEl) countEl.textContent = visible + ' projet' + (visible>1?'s':'') + ' affichÃ©' + (visible>1?'s':'');
         }
 
         applyFilter('all');
@@ -761,106 +761,106 @@
       <div class="services-grid reveal">
         <article class="service-card">
           <span class="num">01</span>
-          <h3 class="nm">Création de site web</h3>
-          <div class="price">À partir de 1 200 €</div>
-          <p class="desc">Sites vitrine, e-commerce ou portfolio — conçus sur mesure pour refléter votre métier.</p>
-          <button class="tag">Voir les offres <span class="arr">→</span></button>
+          <h3 class="nm">CrÃ©ation de site web</h3>
+          <div class="price">Ã€ partir de 1 200 â‚¬</div>
+          <p class="desc">Sites vitrine, e-commerce ou portfolio â€” conÃ§us sur mesure pour reflÃ©ter votre mÃ©tier.</p>
+          <button class="tag">Voir les offres <span class="arr">â†’</span></button>
         </article>
         <article class="service-card">
           <span class="num">02</span>
-          <h3 class="nm">Gestion des réseaux sociaux</h3>
+          <h3 class="nm">Gestion des rÃ©seaux sociaux</h3>
           <div class="price">Abonnement mensuel</div>
-          <p class="desc">Création de contenu, planification éditoriale, modération et analyse de performance.</p>
-          <button class="tag">En savoir plus <span class="arr">→</span></button>
+          <p class="desc">CrÃ©ation de contenu, planification Ã©ditoriale, modÃ©ration et analyse de performance.</p>
+          <button class="tag">En savoir plus <span class="arr">â†’</span></button>
         </article>
         <article class="service-card">
           <span class="num">03</span>
-          <h3 class="nm">Photo &amp; Vidéo pro</h3>
+          <h3 class="nm">Photo &amp; VidÃ©o pro</h3>
           <div class="price">Sur devis</div>
-          <p class="desc">Reportages produits, portraits corporate, événements et contenus vidéos sur-mesure.</p>
-          <button class="tag">Demander un devis <span class="arr">→</span></button>
+          <p class="desc">Reportages produits, portraits corporate, Ã©vÃ©nements et contenus vidÃ©os sur-mesure.</p>
+          <button class="tag">Demander un devis <span class="arr">â†’</span></button>
         </article>
         <article class="service-card">
           <span class="num">04</span>
-          <h3 class="nm">Identité visuelle &amp; Branding</h3>
+          <h3 class="nm">IdentitÃ© visuelle &amp; Branding</h3>
           <div class="price">Pack complet</div>
-          <p class="desc">Logo, charte graphique et supports de communication pour une image forte et cohérente.</p>
-          <button class="tag">Découvrir le pack <span class="arr">→</span></button>
+          <p class="desc">Logo, charte graphique et supports de communication pour une image forte et cohÃ©rente.</p>
+          <button class="tag">DÃ©couvrir le pack <span class="arr">â†’</span></button>
         </article>
         <article class="service-card">
           <span class="num">05</span>
-          <h3 class="nm">Stratégie de communication</h3>
+          <h3 class="nm">StratÃ©gie de communication</h3>
           <div class="price">Accompagnement</div>
-          <p class="desc">Audit, positionnement et plan éditorial sur mesure pour ancrer votre présence durablement.</p>
-          <button class="tag">Parler stratégie <span class="arr">→</span></button>
+          <p class="desc">Audit, positionnement et plan Ã©ditorial sur mesure pour ancrer votre prÃ©sence durablement.</p>
+          <button class="tag">Parler stratÃ©gie <span class="arr">â†’</span></button>
         </article>
         <article class="service-card">
           <span class="num">06</span>
           <h3 class="nm">Diagnostic digital gratuit</h3>
-          <div class="price">Gratuit · sans engagement</div>
-          <p class="desc">Analyse complète de votre visibilité en ligne, points d'amélioration et plan d'action concret.</p>
-          <button class="tag" data-action="diag">Je réserve <span class="arr">→</span></button>
+          <div class="price">Gratuit Â· sans engagement</div>
+          <p class="desc">Analyse complÃ¨te de votre visibilitÃ© en ligne, points d'amÃ©lioration et plan d'action concret.</p>
+          <button class="tag" data-action="diag">Je rÃ©serve <span class="arr">â†’</span></button>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- PRÉSENCE SANS COMPROMIS -->
-  <section class="zone pres" data-screen-label="04 Présence sans compromis">
+  <!-- PRÃ‰SENCE SANS COMPROMIS -->
+  <section class="zone pres" data-screen-label="04 PrÃ©sence sans compromis">
     <div class="wrap">
       <div class="pres-grid reveal">
         <div>
           <span class="eyebrow"><span style="display:inline-block;width:24px;height:1px;background:var(--blue-light);vertical-align:middle;margin-right:12px"></span>Notre promesse</span>
-          <h2 style="margin-top:18px">Présence<br/><span class="accent">Digitale</span><br/>Sans compromis.</h2>
+          <h2 style="margin-top:18px">PrÃ©sence<br/><span class="accent">Digitale</span><br/>Sans compromis.</h2>
         </div>
         <div class="visual">
-          <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=1200&q=80" alt="Liquid chrome 3D" loading="lazy" />
-          <span class="tag">Liquid chrome · 2026</span>
+          <img src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?w=1200&q=80" alt="Liquid chrome 3D" loading="lazy" decoding="async" width="1200" height="800" />
+          <span class="tag">Liquid chrome Â· 2026</span>
         </div>
       </div>
 
       <div class="pres-args reveal">
         <div class="pres-arg">
-          <div class="dash">—</div>
+          <div class="dash">â€”</div>
           <div class="nm">Sur mesure</div>
-          <p class="desc">Zéro template, 100% adapté à votre métier et votre audience.</p>
+          <p class="desc">ZÃ©ro template, 100% adaptÃ© Ã  votre mÃ©tier et votre audience.</p>
         </div>
         <div class="pres-arg">
-          <div class="dash">—</div>
-          <div class="nm">Résultats mesurables</div>
-          <p class="desc">Chaque action est tracée, analysée et optimisée en continu.</p>
+          <div class="dash">â€”</div>
+          <div class="nm">RÃ©sultats mesurables</div>
+          <p class="desc">Chaque action est tracÃ©e, analysÃ©e et optimisÃ©e en continu.</p>
         </div>
         <div class="pres-arg">
-          <div class="dash">—</div>
+          <div class="dash">â€”</div>
           <div class="nm">Accompagnement total</div>
-          <p class="desc">Du diagnostic à la livraison — et au-delà, on reste à vos côtés.</p>
+          <p class="desc">Du diagnostic Ã  la livraison â€” et au-delÃ , on reste Ã  vos cÃ´tÃ©s.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="zone about" id="about" data-screen-label="05 À propos">
+  <section class="zone about" id="about" data-screen-label="05 Ã€ propos">
     <div class="wrap">
       <div class="about-grid reveal">
         <div class="about-photo">
           <div class="frame"></div>
           <div class="img">
-            <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=900&q=80" alt="L'équipe NibiziVisuals" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=900&q=80" alt="L'équipe NibiziVisuals" loading="lazy" decoding="async" width="900" height="1200" />
           </div>
           <div class="ph-tag">
             <span class="big">3+ ans</span>
-            <span class="sm">d'expérience</span>
+            <span class="sm">d'expÃ©rience</span>
           </div>
         </div>
         <div class="about-text">
-          <span class="eyebrow"><span style="display:inline-block;width:24px;height:1px;background:var(--blue-light);vertical-align:middle;margin-right:12px"></span>À propos</span>
-          <h2>Une agence au service<br/>de votre <span class="accent">réussite.</span></h2>
-          <p class="lead">NibiziVisuals est une agence de communication digitale spécialisée dans l'accompagnement des artisans, artistes et petites entreprises. Nous croyons que chaque métier mérite une présence en ligne à la hauteur de son talent.</p>
+          <span class="eyebrow"><span style="display:inline-block;width:24px;height:1px;background:var(--blue-light);vertical-align:middle;margin-right:12px"></span>Ã€ propos</span>
+          <h2>Une agence au service<br/>de votre <span class="accent">rÃ©ussite.</span></h2>
+          <p class="lead">NibiziVisuals est une agence de communication digitale spÃ©cialisÃ©e dans l'accompagnement des artisans, artistes et petites entreprises. Nous croyons que chaque mÃ©tier mÃ©rite une prÃ©sence en ligne Ã  la hauteur de son talent.</p>
           <ul>
             <li>Expertise multi-disciplinaire</li>
-            <li>Approche éditoriale &amp; sur mesure</li>
-            <li>Interlocuteur unique &amp; réactif</li>
+            <li>Approche Ã©ditoriale &amp; sur mesure</li>
+            <li>Interlocuteur unique &amp; rÃ©actif</li>
             <li>Livrables clairs et mesurables</li>
           </ul>
         </div>
@@ -873,12 +873,12 @@
     <div class="cta-inner reveal">
       <div>
         <span class="eyebrow"><span style="display:inline-block;width:24px;height:1px;background:var(--blue-light);vertical-align:middle;margin-right:12px"></span>Diagnostic offert</span>
-        <h2 style="margin-top:18px">Votre présence digitale<br/><span style="color:var(--blue-light)">mérite mieux.</span></h2>
-        <p class="sub">Recevez en 24h un audit complet de votre visibilité en ligne, vos forces, vos faiblesses, et un plan d'action concret — sans engagement.</p>
+        <h2 style="margin-top:18px">Votre prÃ©sence digitale<br/><span style="color:var(--blue-light)">mÃ©rite mieux.</span></h2>
+        <p class="sub">Recevez en 24h un audit complet de votre visibilitÃ© en ligne, vos forces, vos faiblesses, et un plan d'action concret â€” sans engagement.</p>
       </div>
       <div class="cta-right">
-        <a href="#contact" class="btn btn-primary" style="padding:18px 28px;font-size:13px">Réserver mon diagnostic <span class="arrow">→</span></a>
-        <span class="micro">Réponse sous 24h · Sans engagement</span>
+        <a href="#contact" class="btn btn-primary" style="padding:18px 28px;font-size:13px">RÃ©server mon diagnostic <span class="arrow">â†’</span></a>
+        <span class="micro">RÃ©ponse sous 24h Â· Sans engagement</span>
       </div>
     </div>
   </div>
@@ -891,7 +891,7 @@
           <span class="eyebrow"><span style="display:inline-block;width:24px;height:1px;background:var(--blue-light);vertical-align:middle;margin-right:12px"></span>Contact</span>
           <h2>Parlons de<br/>votre <span class="accent">projet.</span></h2>
         </div>
-        <div class="meta"><span class="sq"></span>Réponse sous 24h</div>
+        <div class="meta"><span class="sq"></span>RÃ©ponse sous 24h</div>
       </div>
 
       <div class="contact-grid reveal">
@@ -901,27 +901,27 @@
             <span class="val lg">nibizi.visuals00@gmail.com</span>
           </div>
           <div class="item">
-            <span class="lbl">Téléphone</span>
+            <span class="lbl">TÃ©lÃ©phone</span>
             <span class="val">+33 6 52 67 66 23</span>
           </div>
           <div class="item">
             <span class="lbl">Horaires de travail</span>
-            <span class="val">Lundi – Vendredi 8h00 – 19h00<br/>Samedi 8h00 – 22h00</span>
+            <span class="val">Lundi â€“ Vendredi 8h00 â€“ 19h00<br/>Samedi 8h00 â€“ 22h00</span>
           </div>
           <div class="item">
             <span class="lbl">Adresse</span>
-            <span class="val">3 Avenue 18 juin 1940<br/>27180 Saint-Sébastien-de-Morsent, Normandie</span>
+            <span class="val">3 Avenue 18 juin 1940<br/>27180 Saint-SÃ©bastien-de-Morsent, Normandie</span>
           </div>
           <div class="item">
             <span class="lbl">Suivez-nous</span>
-            <span class="val">Instagram · Behance · LinkedIn</span>
+            <span class="val">Instagram Â· Behance Â· LinkedIn</span>
           </div>
         </aside>
 
         <form class="form" id="contact-form" novalidate>
           <div class="form-success" id="form-success">
-            <strong>Merci, votre demande a bien été envoyée.</strong>
-            On revient vers vous sous 24h ouvrées avec une première réponse.
+            <strong>Merci, votre demande a bien Ã©tÃ© envoyÃ©e.</strong>
+            On revient vers vous sous 24h ouvrÃ©es avec une premiÃ¨re rÃ©ponse.
           </div>
           <div class="row">
             <div class="field">
@@ -937,38 +937,38 @@
           </div>
           <div class="row">
             <div class="field">
-              <label for="f-sector">Secteur d'activité</label>
+              <label for="f-sector">Secteur d'activitÃ©</label>
               <select id="f-sector" name="sector" required>
-                <option value="">— Sélectionner —</option>
-                <option>Boulangerie / Pâtisserie</option>
+                <option value="">â€” SÃ©lectionner â€”</option>
+                <option>Boulangerie / PÃ¢tisserie</option>
                 <option>Restaurant / Traiteur</option>
-                <option>Artiste / Créateur</option>
+                <option>Artiste / CrÃ©ateur</option>
                 <option>Commerce</option>
-                <option>PME / Indépendant</option>
+                <option>PME / IndÃ©pendant</option>
                 <option>Autre</option>
               </select>
-              <span class="err">Sélectionnez un secteur.</span>
+              <span class="err">SÃ©lectionnez un secteur.</span>
             </div>
             <div class="field">
               <label for="f-need">Votre besoin</label>
               <select id="f-need" name="need" required>
-                <option value="">— Sélectionner —</option>
-                <option>Création de site web</option>
-                <option>Gestion réseaux sociaux</option>
-                <option>Photo / Vidéo</option>
-                <option>Identité visuelle</option>
+                <option value="">â€” SÃ©lectionner â€”</option>
+                <option>CrÃ©ation de site web</option>
+                <option>Gestion rÃ©seaux sociaux</option>
+                <option>Photo / VidÃ©o</option>
+                <option>IdentitÃ© visuelle</option>
                 <option>Diagnostic gratuit</option>
                 <option>Accompagnement complet</option>
               </select>
-              <span class="err">Sélectionnez un besoin.</span>
+              <span class="err">SÃ©lectionnez un besoin.</span>
             </div>
           </div>
           <div class="field">
             <label for="f-msg">Parlez-nous de votre projet</label>
-            <textarea id="f-msg" name="message" placeholder="En quelques mots, votre activité, vos enjeux, vos délais…"></textarea>
+            <textarea id="f-msg" name="message" placeholder="En quelques mots, votre activitÃ©, vos enjeux, vos dÃ©laisâ€¦"></textarea>
           </div>
-          <button class="submit" type="submit" id="submit-btn">Envoyer ma demande <span class="arrow">→</span></button>
-          <span style="font-size:11px;color:var(--smoke);letter-spacing:.16em;text-transform:uppercase">En soumettant, vous acceptez d'être recontacté·e par NibiziVisuals.</span>
+          <button class="submit" type="submit" id="submit-btn">Envoyer ma demande <span class="arrow">â†’</span></button>
+          <span style="font-size:11px;color:var(--smoke);letter-spacing:.16em;text-transform:uppercase">En soumettant, vous acceptez d'Ãªtre recontactÃ©Â·e par NibiziVisuals.</span>
         </form>
       </div>
     </div>
@@ -986,11 +986,11 @@
       </div>
       <div class="foot-links">
         <a href="#services">Services</a>
-        <a href="#realisations">Réalisations</a>
-        <a href="#about">À propos</a>
+        <a href="#realisations">RÃ©alisations</a>
+        <a href="#about">Ã€ propos</a>
         <a href="#contact">Contact</a>
       </div>
-      <div class="foot-cr">© 2026 NibiziVisuals · Tous droits réservés</div>
+      <div class="foot-cr">Â© 2026 NibiziVisuals Â· Tous droits rÃ©servÃ©s</div>
     </div>
   </footer>
 
@@ -1053,13 +1053,13 @@
       e.preventDefault();
       if (!validate()) return;
       submitBtn.disabled = true;
-      submitBtn.innerHTML = 'Envoi en cours…';
+      submitBtn.innerHTML = 'Envoi en coursâ€¦';
       setTimeout(() => {
         success.classList.add('show');
         success.scrollIntoView ? null : null; // intentionally avoid scrollIntoView
         form.reset();
         submitBtn.disabled = false;
-        submitBtn.innerHTML = 'Envoyer ma demande <span class="arrow">→</span>';
+        submitBtn.innerHTML = 'Envoyer ma demande <span class="arrow">â†’</span>';
       }, 1100);
     });
 
@@ -1071,347 +1071,5 @@
     }));
   </script>
 
-  <!-- ====== Expressive Tweaks (React + Babel) ====== -->
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-  <script type="text/babel" src="tweaks-panel.jsx"></script>
-
-  <div id="tweaks-mount"></div>
-
-  <script type="text/babel">
-    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-      "mood": "logo",
-      "voice": "brutalist",
-      "intensity": 52,
-      "bgDepth": 0,
-      "titleScale": 100,
-      "titleTracking": 5,
-      "titleCase": "lower",
-      "tempoExtra": 0,
-      "grainExtra": 0,
-      "shadowsExtra": 0,
-      "blobCount": 3,
-      "blobPos": "centered",
-      "blobBlend": "screen",
-      "heroLayout": "centered",
-      "showPills": true,
-      "showScroll": true,
-      "showPulse": true,
-      "cardRadius": 0,
-      "density": "compact",
-      "hoverFx": "glow",
-      "maxw": 1280,
-      "marqueeSpeed": 38,
-      "revealAnim": "fade-up",
-      "heroTitle1": "Votre présence",
-      "heroTitle2": "Magnifiée.",
-      "heroSub": "Sites web, réseaux sociaux, photo & identité visuelle pour artisans, artistes et petites entreprises qui méritent une présence digitale à la hauteur de leur talent.",
-      "agencyName": "NibiziVisuals",
-      "agencyTag": "Media Company"
-    }/*EDITMODE-END*/;
-
-    const MOODS = {
-      logo: {
-        primary: '#C9A572',
-        bgHue: 36, bgSat: 18,
-        blobA: 'linear-gradient(135deg,#C9A572,#7A5A2E)',
-        blobB: 'linear-gradient(135deg,#D4B374,#8B6A38)',
-        blobC: 'linear-gradient(135deg,#E8D7A8,#A6814A)',
-        titleGrad: 'linear-gradient(135deg,#EAE4D8 0%,#D4B374 40%,#8B6A38 100%)',
-        blue: '#C9A572', blueHover: '#D4B374', blueLight: '#E8D7A8', frost: '#EAE4D8',
-      },
-      chrome: {
-        primary: '#60A5FA',
-        bgHue: 232, bgSat: 28,
-        blobA: 'linear-gradient(135deg,#2563EB,#7C3AED)',
-        blobB: 'linear-gradient(135deg,#7C3AED,#EC4899)',
-        blobC: 'linear-gradient(135deg,#0EA5E9,#2563EB)',
-        titleGrad: 'linear-gradient(135deg,#BFDBFE 0%,#60A5FA 40%,#7C3AED 100%)',
-        blue: '#2563EB', blueHover: '#3B82F6', blueLight: '#60A5FA', frost: '#BFDBFE',
-      },
-      solaire: {
-        primary: '#F97316',
-        bgHue: 20, bgSat: 30,
-        blobA: 'linear-gradient(135deg,#F97316,#DC2626)',
-        blobB: 'linear-gradient(135deg,#FACC15,#F97316)',
-        blobC: 'linear-gradient(135deg,#FB923C,#B45309)',
-        titleGrad: 'linear-gradient(135deg,#FED7AA 0%,#FB923C 40%,#DC2626 100%)',
-        blue: '#EA580C', blueHover: '#F97316', blueLight: '#FB923C', frost: '#FED7AA',
-      },
-      foret: {
-        primary: '#10B981',
-        bgHue: 155, bgSat: 20,
-        blobA: 'linear-gradient(135deg,#10B981,#0D9488)',
-        blobB: 'linear-gradient(135deg,#34D399,#0EA5E9)',
-        blobC: 'linear-gradient(135deg,#22C55E,#065F46)',
-        titleGrad: 'linear-gradient(135deg,#A7F3D0 0%,#34D399 40%,#0D9488 100%)',
-        blue: '#059669', blueHover: '#10B981', blueLight: '#34D399', frost: '#A7F3D0',
-      },
-      mono: {
-        primary: '#E5E5E5',
-        bgHue: 0, bgSat: 0,
-        blobA: 'linear-gradient(135deg,#E5E5E5,#A1A1AA)',
-        blobB: 'linear-gradient(135deg,#A1A1AA,#525252)',
-        blobC: 'linear-gradient(135deg,#D4D4D8,#737373)',
-        titleGrad: 'linear-gradient(135deg,#FAFAFA 0%,#D4D4D8 40%,#737373 100%)',
-        blue: '#A1A1AA', blueHover: '#D4D4D8', blueLight: '#E5E5E5', frost: '#F5F5F5',
-      },
-      acid: {
-        primary: '#A3E635',
-        bgHue: 280, bgSat: 25,
-        blobA: 'linear-gradient(135deg,#A3E635,#22D3EE)',
-        blobB: 'linear-gradient(135deg,#D946EF,#FACC15)',
-        blobC: 'linear-gradient(135deg,#22D3EE,#0EA5E9)',
-        titleGrad: 'linear-gradient(135deg,#ECFCCB 0%,#A3E635 40%,#D946EF 100%)',
-        blue: '#84CC16', blueHover: '#A3E635', blueLight: '#BEF264', frost: '#ECFCCB',
-      },
-    };
-
-    const VOICES = {
-      brutalist: {
-        display: '"Bebas Neue", Impact, sans-serif',
-        body: '"DM Sans", system-ui, sans-serif',
-      },
-      editorial: {
-        display: '"Fraunces", "Times New Roman", serif',
-        body: '"Inter", "DM Sans", system-ui, sans-serif',
-      },
-      geometric: {
-        display: '"Space Grotesk", system-ui, sans-serif',
-        body: '"Space Grotesk", system-ui, sans-serif',
-      },
-    };
-
-    function App() {
-      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
-      const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
-
-      // ─── Ambiance: mood + bg depth (combined so bg hue follows mood) ───
-      React.useEffect(() => {
-        const m = MOODS[t.mood] || MOODS.chrome;
-        const r = document.documentElement.style;
-        r.setProperty('--blob-a-grad', m.blobA);
-        r.setProperty('--blob-b-grad', m.blobB);
-        r.setProperty('--blob-c-grad', m.blobC);
-        r.setProperty('--title-grad', m.titleGrad);
-        r.setProperty('--blue', m.blue);
-        r.setProperty('--blue-hover', m.blueHover);
-        r.setProperty('--blue-light', m.blueLight);
-        r.setProperty('--frost', m.frost);
-        const d = t.bgDepth || 0;
-        const hue = m.bgHue ?? 232, sat = m.bgSat ?? 28;
-        const base = (lit) => `hsl(${hue} ${sat}% ${Math.max(0, lit + d * 0.45)}%)`;
-        r.setProperty('--void',    base(3));
-        r.setProperty('--deep',    base(6));
-        r.setProperty('--abyss',   base(9));
-        r.setProperty('--surface', base(12));
-        const isWarm = (hue >= 20 && hue <= 60) || hue === 0;
-        r.setProperty('--white',  isWarm ? '#EAE4D8' : '#FAFAFA');
-        r.setProperty('--chrome', isWarm ? '#C8BEA8' : '#C8C8D0');
-        r.setProperty('--smoke',  isWarm ? '#7A6F5A' : '#6B6B7A');
-        document.body.dataset.moodOverride = '1';
-      }, [t.mood, t.bgDepth]);
-
-      // ─── Voix typographique ───
-      React.useEffect(() => {
-        const v = VOICES[t.voice] || VOICES.brutalist;
-        const r = document.documentElement.style;
-        r.setProperty('--ff-display', v.display);
-        r.setProperty('--ff-body', v.body);
-        document.body.dataset.voice = t.voice;
-      }, [t.voice]);
-
-      React.useEffect(() => {
-        document.documentElement.style.setProperty('--title-scale', (t.titleScale / 100).toFixed(3));
-      }, [t.titleScale]);
-
-      React.useEffect(() => {
-        document.documentElement.style.setProperty('--letter-display', (t.titleTracking / 1000) + 'em');
-      }, [t.titleTracking]);
-
-      React.useEffect(() => {
-        document.body.dataset.titleCase = t.titleCase;
-      }, [t.titleCase]);
-
-      // ─── Intensité (macro) + offsets micro ───
-      React.useEffect(() => {
-        const i = clamp(t.intensity, 0, 100) / 100;
-        const r = document.documentElement.style;
-        r.setProperty('--blob-blur',      (120 - 70 * i).toFixed(1) + 'px');
-        r.setProperty('--blob-opacity',   (0.22 + 0.65 * i).toFixed(3));
-        r.setProperty('--blob-c-opacity', (0.12 + 0.48 * i).toFixed(3));
-        const tempoBase = 0.45 + 1.7 * i;
-        const tempoMult = 1 + (t.tempoExtra || 0) / 100;
-        r.setProperty('--anim-mult', Math.max(0.1, tempoBase * tempoMult).toFixed(3));
-        const grain = clamp(i + (t.grainExtra || 0) / 100, 0, 2);
-        r.setProperty('--grain-int', grain.toFixed(3));
-        const shadow = Math.max(0, (0.2 + 1.6 * i) * (1 + (t.shadowsExtra || 0) / 100));
-        r.setProperty('--shadow-int', shadow.toFixed(3));
-      }, [t.intensity, t.tempoExtra, t.grainExtra, t.shadowsExtra]);
-
-      // ─── Blobs ───
-      React.useEffect(() => { document.body.dataset.blobs = String(t.blobCount); }, [t.blobCount]);
-      React.useEffect(() => { document.body.dataset.blobPos = t.blobPos; }, [t.blobPos]);
-      React.useEffect(() => { document.body.dataset.blobBlend = t.blobBlend; }, [t.blobBlend]);
-
-      // ─── Hero ───
-      React.useEffect(() => { document.body.dataset.heroLayout = t.heroLayout; }, [t.heroLayout]);
-      React.useEffect(() => { document.body.dataset.pills = t.showPills ? 'on' : 'off'; }, [t.showPills]);
-      React.useEffect(() => { document.body.dataset.scroll = t.showScroll ? 'on' : 'off'; }, [t.showScroll]);
-      React.useEffect(() => { document.body.dataset.pulse = t.showPulse ? 'on' : 'off'; }, [t.showPulse]);
-
-      // ─── Cartes & mise en page ───
-      React.useEffect(() => { document.documentElement.style.setProperty('--card-r', t.cardRadius + 'px'); }, [t.cardRadius]);
-      React.useEffect(() => { document.body.dataset.density = t.density; }, [t.density]);
-      React.useEffect(() => { document.body.dataset.hoverFx = t.hoverFx; }, [t.hoverFx]);
-      React.useEffect(() => { document.documentElement.style.setProperty('--maxw', t.maxw + 'px'); }, [t.maxw]);
-
-      // ─── Animation ───
-      React.useEffect(() => { document.documentElement.style.setProperty('--marquee-base', t.marqueeSpeed + 's'); }, [t.marqueeSpeed]);
-      React.useEffect(() => { document.body.dataset.reveal = t.revealAnim; }, [t.revealAnim]);
-
-      // ─── Contenu (DOM patches) ───
-      React.useEffect(() => {
-        document.querySelectorAll('h1.hero-title .line1').forEach(el => el.textContent = t.heroTitle1);
-      }, [t.heroTitle1]);
-      React.useEffect(() => {
-        document.querySelectorAll('h1.hero-title .line2').forEach(el => el.textContent = t.heroTitle2);
-      }, [t.heroTitle2]);
-      React.useEffect(() => {
-        const el = document.querySelector('.hero-sub'); if (el) el.textContent = t.heroSub;
-      }, [t.heroSub]);
-      React.useEffect(() => {
-        document.querySelectorAll('.logo .name').forEach(el => el.textContent = t.agencyName);
-      }, [t.agencyName]);
-      React.useEffect(() => {
-        document.querySelectorAll('.logo .tag').forEach(el => el.textContent = t.agencyTag);
-      }, [t.agencyTag]);
-
-      return (
-        <TweaksPanel title="NibiziVisuals · Tweaks">
-          <TweakSection label="Ambiance" />
-          <TweakColor
-            label="Mood"
-            value={MOODS[t.mood]?.primary || MOODS.logo.primary}
-            options={[
-              MOODS.logo.primary, MOODS.chrome.primary, MOODS.solaire.primary, MOODS.foret.primary,
-              MOODS.mono.primary, MOODS.acid.primary,
-            ]}
-            onChange={(hex) => {
-              const key = Object.keys(MOODS).find(k => MOODS[k].primary === hex) || 'logo';
-              setTweak('mood', key);
-            }}
-          />
-          <TweakSlider label="Profondeur du fond" value={t.bgDepth} min={-15} max={40} step={1} unit=""
-            onChange={(v) => setTweak('bgDepth', v)} />
-
-          <TweakSection label="Voix typographique" />
-          <TweakRadio label="Personnalité" value={t.voice}
-            options={[
-              { value: 'brutalist', label: 'Bebas' },
-              { value: 'editorial', label: 'Edito' },
-              { value: 'geometric', label: 'Geo' },
-            ]}
-            onChange={(v) => setTweak('voice', v)} />
-          <TweakSlider label="Taille titres" value={t.titleScale} min={60} max={150} step={2} unit="%"
-            onChange={(v) => setTweak('titleScale', v)} />
-          <TweakSlider label="Crénage titres" value={t.titleTracking} min={-40} max={40} step={1} unit=""
-            onChange={(v) => setTweak('titleTracking', v)} />
-          <TweakRadio label="Casse" value={t.titleCase}
-            options={[
-              { value: 'upper', label: 'UPPER' },
-              { value: 'title', label: 'Title' },
-              { value: 'lower', label: 'lower' },
-            ]}
-            onChange={(v) => setTweak('titleCase', v)} />
-
-          <TweakSection label="Intensité — musée ↔ club" />
-          <TweakSlider label="Niveau" value={t.intensity} min={0} max={100} step={1} unit="%"
-            onChange={(v) => setTweak('intensity', v)} />
-          <TweakSlider label="Tempo offset" value={t.tempoExtra} min={-60} max={120} step={5} unit="%"
-            onChange={(v) => setTweak('tempoExtra', v)} />
-          <TweakSlider label="Grain offset" value={t.grainExtra} min={-100} max={100} step={5} unit=""
-            onChange={(v) => setTweak('grainExtra', v)} />
-          <TweakSlider label="Ombres offset" value={t.shadowsExtra} min={-80} max={120} step={5} unit="%"
-            onChange={(v) => setTweak('shadowsExtra', v)} />
-
-          <TweakSection label="Blobs" />
-          <TweakRadio label="Nombre" value={t.blobCount}
-            options={[
-              { value: 1, label: '1' },
-              { value: 2, label: '2' },
-              { value: 3, label: '3' },
-            ]}
-            onChange={(v) => setTweak('blobCount', v)} />
-          <TweakRadio label="Position" value={t.blobPos}
-            options={[
-              { value: 'scattered', label: 'Disp.' },
-              { value: 'corners',   label: 'Coins' },
-              { value: 'centered',  label: 'Centre' },
-            ]}
-            onChange={(v) => setTweak('blobPos', v)} />
-          <TweakRadio label="Fusion" value={t.blobBlend}
-            options={[
-              { value: 'screen',  label: 'Screen' },
-              { value: 'normal',  label: 'Normal' },
-              { value: 'lighten', label: 'Lighten' },
-            ]}
-            onChange={(v) => setTweak('blobBlend', v)} />
-
-          <TweakSection label="Hero" />
-          <TweakRadio label="Layout" value={t.heroLayout}
-            options={[
-              { value: 'centered', label: 'Centré' },
-              { value: 'left',     label: 'Gauche' },
-            ]}
-            onChange={(v) => setTweak('heroLayout', v)} />
-          <TweakToggle label="Stat pills"        value={t.showPills}  onChange={(v) => setTweak('showPills', v)} />
-          <TweakToggle label="Indicateur scroll" value={t.showScroll} onChange={(v) => setTweak('showScroll', v)} />
-          <TweakToggle label="Pulse eyebrow"     value={t.showPulse}  onChange={(v) => setTweak('showPulse', v)} />
-
-          <TweakSection label="Cartes & mise en page" />
-          <TweakSlider label="Rayon cartes" value={t.cardRadius} min={0} max={32} step={1} unit="px"
-            onChange={(v) => setTweak('cardRadius', v)} />
-          <TweakRadio label="Densité" value={t.density}
-            options={[
-              { value: 'compact',  label: 'Compact' },
-              { value: 'normal',   label: 'Normal' },
-              { value: 'spacious', label: 'Spat.' },
-            ]}
-            onChange={(v) => setTweak('density', v)} />
-          <TweakRadio label="Hover cartes" value={t.hoverFx}
-            options={[
-              { value: 'lift', label: 'Lift' },
-              { value: 'glow', label: 'Glow' },
-              { value: 'both', label: 'Both' },
-            ]}
-            onChange={(v) => setTweak('hoverFx', v)} />
-          <TweakSlider label="Largeur" value={t.maxw} min={1100} max={1480} step={20} unit="px"
-            onChange={(v) => setTweak('maxw', v)} />
-
-          <TweakSection label="Animation" />
-          <TweakSlider label="Marquee (sec)" value={t.marqueeSpeed} min={10} max={80} step={2} unit="s"
-            onChange={(v) => setTweak('marqueeSpeed', v)} />
-          <TweakRadio label="Reveal" value={t.revealAnim}
-            options={[
-              { value: 'fade-up', label: 'Up' },
-              { value: 'fade-in', label: 'In' },
-              { value: 'none',    label: 'Off' },
-            ]}
-            onChange={(v) => setTweak('revealAnim', v)} />
-
-          <TweakSection label="Contenu" />
-          <TweakText label="Titre · ligne 1" value={t.heroTitle1} onChange={(v) => setTweak('heroTitle1', v)} />
-          <TweakText label="Titre · ligne 2" value={t.heroTitle2} onChange={(v) => setTweak('heroTitle2', v)} />
-          <TweakText label="Sous-titre"      value={t.heroSub}    onChange={(v) => setTweak('heroSub', v)} />
-          <TweakText label="Nom agence"      value={t.agencyName} onChange={(v) => setTweak('agencyName', v)} />
-          <TweakText label="Tagline"         value={t.agencyTag}  onChange={(v) => setTweak('agencyTag', v)} />
-        </TweaksPanel>
-      );
-    }
-
-    ReactDOM.createRoot(document.getElementById('tweaks-mount')).render(<App />);
-  </script>
 </body>
 </html>
