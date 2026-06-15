@@ -614,67 +614,106 @@
         var metaCount = document.getElementById('gallery-meta-count');
         if (!grid) return;
 
-        fetch('uploads/gallery/manifest.json', { cache: 'no-store' })
-          .then(function(r){ return r.json(); })
-          .then(function(data){
-            var items = data.items || [];
-            var categories = data.categories || [{id:'all', label:'Tous'}];
+        var GALLERY_DATA = {
+          categories: [
+            { id: "all", label: "Tous" },
+            { id: "patisserie", label: "Pâtisserie & Boulangerie" },
+            { id: "restauration", label: "Café & Restauration" },
+            { id: "evenements", label: "Événements" },
+            { id: "portraits", label: "Portraits & Corporate" },
+            { id: "mode", label: "Mode & Artisanat" }
+          ],
+          items: [
+            { file: "s01.jpg", category: "portraits", title: "Portrait Direction", client: "Conseil & Stratégie" },
+            { file: "s02.jpg", category: "portraits", title: "Réunion conseil", client: "Espace de coworking" },
+            { file: "s03.jpg", category: "portraits", title: "Portrait studio", client: "Identité corporate" },
+            { file: "s04.jpg", category: "portraits", title: "Portrait studio premium", client: "Branding personnel" },
+            { file: "s05.jpg", category: "portraits", title: "Workshop équipe", client: "Innovation Lab" },
+            { file: "s06.jpg", category: "portraits", title: "Portrait lifestyle", client: "Entrepreneur" },
+            { file: "s07.jpg", category: "portraits", title: "Portrait éditorial", client: "Profile Magazine" },
+            { file: "s08.jpg", category: "portraits", title: "Mentorat business", client: "Coaching pro" },
+            { file: "s09.jpg", category: "evenements", title: "Garden party", client: "Lancement produit" },
+            { file: "s10.jpg", category: "evenements", title: "Conférence ouverte", client: "Talk inspirant" },
+            { file: "s11.jpg", category: "restauration", title: "Buffet traiteur", client: "Cocktail d'entreprise" },
+            { file: "s12.jpg", category: "restauration", title: "IZY Coffee · Atelier", client: "IZY Coffee" },
+            { file: "s13.jpg", category: "restauration", title: "IZY Coffee · Espresso", client: "IZY Coffee" },
+            { file: "s14.jpg", category: "restauration", title: "IZY Coffee · Latte art", client: "IZY Coffee" },
+            { file: "s15.jpg", category: "evenements", title: "Lecture sur scène", client: "Spectacle vivant" },
+            { file: "s16.jpg", category: "evenements", title: "Théâtre · Tête-à-tête", client: "Production scénique" },
+            { file: "s17.jpg", category: "patisserie", title: "Mille-feuille Signature", client: "Le Café Gourmand" },
+            { file: "s18.jpg", category: "patisserie", title: "Entremets cœur rouge", client: "Le Café Gourmand" },
+            { file: "s19.jpg", category: "patisserie", title: "Tartelette dorée", client: "Le Café Gourmand" },
+            { file: "s20.jpg", category: "patisserie", title: "Brownie Americain", client: "Le Café Gourmand" },
+            { file: "s21.jpg", category: "restauration", title: "Vol-au-vent gastronomique", client: "Restaurant étoilé" },
+            { file: "s22.jpg", category: "patisserie", title: "Panier campagne", client: "Boulangerie artisanale" },
+            { file: "s23.jpg", category: "mode", title: "Bijoux Wax", client: "Atelier de création" },
+            { file: "s24.jpg", category: "mode", title: "Cueillette du café", client: "Producteur éthique" }
+          ]
+        };
 
-            if (metaCount) metaCount.textContent = String(items.length).padStart(2,'0');
-
-            categories.forEach(function(cat, idx){
-              var btn = document.createElement('button');
-              btn.textContent = cat.label;
-              btn.dataset.cat = cat.id;
-              if (idx === 0) btn.classList.add('active');
-              btn.addEventListener('click', function(){
-                filtersWrap.querySelectorAll('button').forEach(function(b){ b.classList.remove('active'); });
-                btn.classList.add('active');
-                applyFilter(cat.id);
-              });
-              filtersWrap.appendChild(btn);
-            });
-
-            items.forEach(function(it){
-              var card = document.createElement('div');
-              card.className = 'real-card';
-              card.dataset.category = it.category;
-              card.innerHTML = ''+
-                '<img src="uploads/gallery/' + it.file + '" alt="' + (it.title || '') + '" loading="lazy" />'+
-                '<div class="overlay"></div>'+
-                '<div class="arrow-circle">↗</div>'+
-                '<div class="info">'+
-                  '<span class="cat">' + (categoryLabel(categories, it.category)) + '</span>'+
-                  '<span class="nm">' + (it.title || '') + '</span>'+
-                  '<span class="ville">' + (it.client || '') + '</span>'+
-                '</div>';
-              grid.appendChild(card);
-            });
-
-            applyFilter('all');
-
-            function applyFilter(cat){
-              var visible = 0;
-              grid.querySelectorAll('.real-card').forEach(function(card){
-                if (cat === 'all' || card.dataset.category === cat){
-                  card.classList.remove('hidden');
-                  visible++;
-                } else {
-                  card.classList.add('hidden');
-                }
-              });
-              if (countEl) countEl.textContent = visible + ' projet' + (visible>1?'s':'') + ' affiché' + (visible>1?'s':'');
-            }
-
-            function categoryLabel(cats, id){
-              var c = cats.find(function(c){ return c.id === id; });
-              return c ? c.label : id;
-            }
-          })
-          .catch(function(err){
-            console.error('Galerie : impossible de charger le manifest', err);
-            grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px;color:var(--smoke)">Galerie indisponible</div>';
+        function escapeHtml(s){
+          return String(s||'').replace(/[&<>"']/g, function(c){
+            return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
           });
+        }
+
+        function categoryLabel(cats, id){
+          for (var i=0; i<cats.length; i++){ if (cats[i].id === id) return cats[i].label; }
+          return id;
+        }
+
+        var items = GALLERY_DATA.items;
+        var categories = GALLERY_DATA.categories;
+
+        if (metaCount) {
+          var n = items.length;
+          metaCount.textContent = (n < 10 ? '0' : '') + n;
+        }
+
+        categories.forEach(function(cat, idx){
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.textContent = cat.label;
+          btn.setAttribute('data-cat', cat.id);
+          if (idx === 0) btn.className = 'active';
+          btn.addEventListener('click', function(){
+            var all = filtersWrap.querySelectorAll('button');
+            for (var i=0; i<all.length; i++) all[i].className = '';
+            btn.className = 'active';
+            applyFilter(cat.id);
+          });
+          filtersWrap.appendChild(btn);
+        });
+
+        items.forEach(function(it){
+          var card = document.createElement('div');
+          card.className = 'real-card';
+          card.setAttribute('data-category', it.category);
+          card.innerHTML = ''+
+            '<img src="uploads/gallery/' + it.file + '" alt="' + escapeHtml(it.title) + '" loading="lazy" />'+
+            '<div class="overlay"></div>'+
+            '<div class="arrow-circle">↗</div>'+
+            '<div class="info">'+
+              '<span class="cat">' + escapeHtml(categoryLabel(categories, it.category)) + '</span>'+
+              '<span class="nm">' + escapeHtml(it.title) + '</span>'+
+              '<span class="ville">' + escapeHtml(it.client) + '</span>'+
+            '</div>';
+          grid.appendChild(card);
+        });
+
+        function applyFilter(cat){
+          var visible = 0;
+          var cards = grid.querySelectorAll('.real-card');
+          for (var i=0; i<cards.length; i++){
+            var card = cards[i];
+            var match = (cat === 'all' || card.getAttribute('data-category') === cat);
+            card.style.display = match ? '' : 'none';
+            if (match) visible++;
+          }
+          if (countEl) countEl.textContent = visible + ' projet' + (visible>1?'s':'') + ' affiché' + (visible>1?'s':'');
+        }
+
+        applyFilter('all');
       })();
     </script>
   </section>
