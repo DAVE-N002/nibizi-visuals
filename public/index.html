@@ -613,7 +613,7 @@
     <div class="statsband-inner">
       <div class="stat-cell reveal"><div class="num">+10</div><div class="lbl">Clients accompagnés</div></div>
       <div class="stat-cell reveal"><div class="num">100%</div><div class="lbl">Satisfaction client</div></div>
-      <div class="stat-cell reveal"><div class="num">3</div><div class="lbl">Expertises cÅ“ur</div></div>
+      <div class="stat-cell reveal"><div class="num">3</div><div class="lbl">Expertises cœur</div></div>
       <div class="stat-cell reveal"><div class="num">FR</div><div class="lbl">Basé en France</div></div>
     </div>
   </div>
@@ -637,6 +637,7 @@
 
     <script>
       (function(){
+      try {
         var grid = document.getElementById('gallery-grid');
         var filtersWrap = document.getElementById('gallery-filters');
         var countEl = document.getElementById('gallery-count');
@@ -670,7 +671,7 @@
             { file: "s15.jpg", category: "evenements", title: "Lecture sur scène", client: "Spectacle vivant" },
             { file: "s16.jpg", category: "evenements", title: "Théâtre · Tête-à-tête", client: "Production scénique" },
             { file: "s17.jpg", category: "patisserie", title: "Mille-feuille Signature", client: "Le Café Gourmand" },
-            { file: "s18.jpg", category: "patisserie", title: "Entremets cÅ“ur rouge", client: "Le Café Gourmand" },
+            { file: "s18.jpg", category: "patisserie", title: "Entremets cœur rouge", client: "Le Café Gourmand" },
             { file: "s19.jpg", category: "patisserie", title: "Tartelette dorée", client: "Le Café Gourmand" },
             { file: "s20.jpg", category: "patisserie", title: "Brownie Americain", client: "Le Café Gourmand" },
             { file: "s21.jpg", category: "restauration", title: "Vol-au-vent gastronomique", client: "Restaurant étoilé" },
@@ -743,6 +744,13 @@
         }
 
         applyFilter('all');
+      } catch (e) {
+        var g = document.getElementById('gallery-grid');
+        if (g) {
+          g.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:#C9A572;font-size:12px;letter-spacing:.2em;text-transform:uppercase">Erreur galerie : ' + (e && e.message ? e.message : 'inconnue') + '</div>';
+        }
+        if (window.console) console.error('Gallery error:', e);
+      }
       })();
     </script>
   </section>
